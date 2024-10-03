@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel War</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="bot">
+            <input type="checkbox" name="" id="BOT">
+            <label for="BOT"></label>
+        </div>
+        
+        <h1>Pixel War IUT</h1>
+        
+        <img src="../img/moon.png" id="darkmode">
+        
+    </header>
+    <article>
+        
+        <info>
+            <div id="image"></div>
+            <table id="playersList">
+                <tr>
+                    <th>Nom</th>
+                    <th>Equipe</th>
+                    <th>Modif</th>
+                    <th>Ban</th>
+                    <th>Poses</th>
+                    
+                </tr>
+            </table>
+        </info>
+
+        <tableau id="tableau">Le serveur n'etant plus actif il ne reste plus que l'interface</tableau>
+        
+        
+        
+        <outils id="tools">
+            <h3>Identification</h3>
+
+            <div><input type="password" id="user"></div>
+
+            <h3>Couleur</h3>
+            <div><input type="color" id="couleur"></div>
+            
+
+            <h3>Temps avant prochaine modification</h3>
+            <div id="time"><p></p></div>
+            <div id="gauge"></div>
+            
+
+            <h3>Equipe</h3>
+            <div id="SwitchTeam">
+                <input type="radio" name="team" id="button_putTeam1" value="1"/>
+                <label for="button_putTeam1">Equipe 1</label>
+                <input type="radio" name="team" id="button_putTeam2" value="2"/>
+                <label for="button_putTeam2">Equipe 2</label>
+                <input type="radio" name="team" id="button_putTeam3" value="3"/>
+                <label for="button_putTeam3">Equipe 3</label>
+                <input type="radio" name="team" id="button_putTeam4" value="4"/>
+                <label for="button_putTeam4">Equipe 4</label>
+            </div>
+
+            <h3>Informations Serveurs</h3>
+            <div id="debug"><p></p></div>
+
+            
+            
+            
+        </outils>
+        
+    </article>
+    <footer>
+        
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    
+</body>
+</html>

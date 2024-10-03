@@ -1,0 +1,293 @@
+html{   
+    margin: 0px;
+}
+
+:root{
+    
+    --colorP1: rgba(240, 195, 0,0.3);
+    --colorP2: #F6DC12;
+    --colorP3: white;
+    --colorP4: rgb(0, 0, 0);
+    --colorP5: #E6E697;
+    --colorP6: #F7FF3C;
+    --colorP7: rgba(141, 143, 34, 0.4);
+
+    --BackgroungImgage: url("../img/clair.gif");
+
+    
+}
+
+.dark-mode{
+    --colorP1: rgba(136, 77, 167,0.8);
+    --colorP2: #6C0277;
+    --colorP3: #100118;
+    --colorP4: cornsilk;
+    --colorP5: #D473D4;
+    --colorP6: #B666D2;
+    --colorP7: rgba(132, 34, 143, 0.5);
+
+    --BackgroungImgage: url("../img/sombre.gif");
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    min-height: 100vh;
+    background-image: var(--BackgroungImgage);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size:1950px;
+    color: var(--colorP4);
+}
+header{
+    display: flex;
+    margin-bottom: 3px;
+    justify-content: space-between;
+    background-color: var(--colorP1);
+    height: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--colorP3);
+    text-shadow: var(--colorP4) 0px 0px 10px;
+}
+
+header > *{
+    margin-inline: 50px;
+    align-self: center;
+}
+
+#BOT{
+    display: none;
+
+}
+.bot{   
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+#BOT + label{
+    background-color: var(--colorP2);
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+
+#BOT + label::before{
+    position: absolute;
+    content : '';
+    background-image: url("/img/Bot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    transition: all ease-in-out 0.3s;
+}
+
+#BOT:checked + label{
+    background-color: var(--colorP5);
+
+}
+
+#BOT:checked + label::before{
+    transform: translate(20px,-5px);
+}
+
+
+footer{
+    display: flex;
+    margin-top:10px;
+    justify-content: center;
+    background-color: var(--colorP1);
+    background-position: center;
+    height: 120px;
+}
+
+
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article > *{
+    margin-inline: 25px;
+    border-color: var(--colorP4);
+    border-style: solid;
+    border-width: 3px;
+    height: auto;
+    
+
+}
+outils{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 400px;
+    background-color: var(--colorP7);
+    border-radius: 10px;
+    max-height: 800px;
+
+}
+
+outils > *{
+    margin-block: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+outils > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#SwitchTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+
+}
+
+#SwitchTeam > input{
+    display: none;
+}
+
+#SwitchTeam > label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: var(--colorP2);
+    color: var(--colorP4);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    border-color: var(--colorP2);
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.3s;
+    
+}
+
+#SwitchTeam > input:checked + label{
+    background-color: var(--colorP5);
+    color: var(--colorP4);
+}
+
+#SwitchTeam label:first-of-type{
+    border-radius: 10px 0px 0px 10px;
+}
+
+#SwitchTeam label:last-of-type{
+    border-radius: 0px 10px 10px 0px;
+}
+
+#gauge{
+    height: 10px;
+    background-color: var(--colorP5);
+    border: 1px solid var(--colorP4);
+    margin-inline: 5px;
+    display: none;
+    
+}
+
+
+outils > *:not(#SwitchTeam) > input{
+    min-width: 100px;
+    min-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+outils > h3 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--colorP6);
+    color: var(--colorP3);
+    text-shadow: var(--colorP4) 0px 0px 10px;
+    padding: 10px;
+}
+
+
+footer{
+    display: inline-flex;
+}
+
+tableau{
+    border-collapse: collapse;
+    max-height: 800px;
+    
+}
+tableau > tr > td{
+    padding: 4px;
+}
+
+tableau > tr {
+    margin: 0px;
+}
+info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 400px;
+    background-color: var(--colorP7);
+    border-radius: 10px;
+}
+
+#playersList{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    
+
+}
+
+#playersList > tbody>  tr > th{
+    border: 2px solid var(--colorP4);
+    padding: 5px;
+    max-width: 110px;
+    background-color: var(--colorP5);
+}
+
+#playersList > tr > td{
+    border: 2px solid var(--colorP4);
+    padding: 5px;
+    max-width: 110px;
+    background-color: var(--colorP2);
+    text-align: center;
+    min-height: 50px;
+}
+
+debug > p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image > tr > td{
+    padding: 1.5px;
+}
+#image{
+    border-collapse: collapse;
+    border: 2px solid var(--colorP4);
+}
+
+#darkmode{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
