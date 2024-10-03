@@ -12,7 +12,7 @@ html{
     --colorP6: #F7FF3C;
     --colorP7: rgba(141, 143, 34, 0.4);
 
-    --BackgroungImgage: url("../img/clair.gif");
+    --BackgroungImgage: url("https://clement-labbe-etu.github.io/JS-PixelWar/img/clair.gif");
 
     
 }
@@ -26,7 +26,7 @@ html{
     --colorP6: #B666D2;
     --colorP7: rgba(132, 34, 143, 0.5);
 
-    --BackgroungImgage: url("../img/sombre.gif");
+    --BackgroungImgage: url("https://clement-labbe-etu.github.io/JS-PixelWar/img/sombre.gif");
 }
 body{
     display:flex;
@@ -81,7 +81,7 @@ header > *{
 #BOT + label::before{
     position: absolute;
     content : '';
-    background-image: url("/img/Bot.png");
+    background-image: url("https://clement-labbe-etu.github.io/JS-PixelWar/img/Bot.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
