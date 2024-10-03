@@ -198,9 +198,9 @@ document.querySelectorAll("input[type=radio]").forEach((radio) => {
 document.getElementById("darkmode").addEventListener('click', async() => {
     document.body.classList.toggle("dark-mode");
     if(document.body.classList.contains("dark-mode")){
-        document.getElementById("darkmode").src = "../img/sun.png";
+        document.getElementById("darkmode").src = "https://clement-labbe-etu.github.io/JS-PixelWar/img/sun.png";
     } else {
-        document.getElementById("darkmode").src = "../img/moon.png";
+        document.getElementById("darkmode").src = "https://clement-labbe-etu.github.io/JS-PixelWar/img/moon.png";
     }
 });
 
